@@ -171,8 +171,8 @@ public Map<String, Object> ssoCallback(String sso_token) {
 
 ## 参考资料
 
-- [Sa-Token 官方文档](https://sa-token.dev33.cn/)
-- [Sa-Token SSO 文档](https://sa-token.dev33.cn/doc.html#/sso/sso-server)
+- [Sa-Token 官方文档](https://sa-token.cc/)
+- [Sa-Token SSO 文档](https://sa-token.cc/doc.html#/sso/sso-server)
 - [OAuth 2.0 协议规范](https://datatracker.ietf.org/doc/html/rfc6749)
 
 ---
