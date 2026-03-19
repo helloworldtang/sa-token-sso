@@ -1,0 +1,24 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: sa-token-sso-client2
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+
+sa-token: 
+  token-name: satoken
+  timeout: 2592000
+  is-share: true
+  sso:
+    # SSO 认证中心地址
+    auth-url: http://localhost:8000/sso/doLogin
+    # 回调地址
+    callback-url: http://localhost:8002/sso/callback
+    # SSO 服务端地址
+    server-url: http://localhost:8000
+    is-sso: true

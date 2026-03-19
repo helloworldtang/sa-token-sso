@@ -1,0 +1,26 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: sa-token-sso-server
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+
+# SA-Token 配置
+sa-token: 
+  # Token 名称
+  token-name: satoken
+  # Token 有效期（秒）
+  timeout: 2592000
+  # 是否共享 Token
+  is-share: true
+  # SSO 相关配置
+  sso:
+    # SSO 认证中心地址
+    auth-url: http://localhost:8000/sso/doLogin
+    # 是否启用 SSO 模式
+    is-sso: true
